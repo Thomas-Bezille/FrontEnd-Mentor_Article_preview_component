@@ -8,6 +8,7 @@
       type="image/png"
       sizes="32x32"
       href="./docs/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Article preview component</title>
     <style>
       .attribution {
@@ -40,12 +41,14 @@
       </main>
 
       <div class="card__profile">
-        <img
-          src="./docs/images/avatar-michelle.jpg"
-          alt="Michelle Appleton's profile picture" />
         <div class="card__profile__presentation">
-          <p class="">Michelle Appleton</p>
-          <time datetime="2020-06-28">28 Jun 2020</time>
+          <img
+            src="./docs/images/avatar-michelle.jpg"
+            alt="Michelle Appleton's profile picture" />
+          <div class="card__profile__presentation__text">
+            <p class="">Michelle Appleton</p>
+            <time datetime="2020-06-28">28 Jun 2020</time>
+          </div>
         </div>
         <button class="card__profile__btn-share">
           <img src="./docs/images/icon-share.svg" alt="Icon Share" />
@@ -54,11 +57,19 @@
 
       <!-- Interactive section: invisible, then visible when the share button is clicked -->
       <div class="card__profile--active">
-        <p>Share</p>
-        <div class="card__profile--active__social-links">
-          <img src="./docs/images/icon-facebook.svg" alt="Icon Facebook" />
-          <img src="./docs/images/icon-twitter.svg" alt="Icon Twitter" />
-          <img src="./docs/images/icon-pinterest.svg" alt="Icon Pinterest" />
+        <div class="card__profile--active__social">
+          <p>Share</p>
+          <div class="card__profile--active__social-links">
+            <a href="#"
+              ><img src="./docs/images/icon-facebook.svg" alt="Icon Facebook"
+            /></a>
+            <a href="#"
+              ><img src="./docs/images/icon-twitter.svg" alt="Icon Twitter"
+            /></a>
+            <a href="#"
+              ><img src="./docs/images/icon-pinterest.svg" alt="Icon Pinterest"
+            /></a>
+          </div>
         </div>
         <button class="card__profile--active__btn-share">
           <img src="./docs/images/icon-share.svg" alt="Icon Share" />
