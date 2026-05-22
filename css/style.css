@@ -13,6 +13,7 @@ body {
   font-size: 13px;
   color: #333;
   padding-top: 2rem;
+  min-height: 100vh;
 }
 
 .card__text-container,
@@ -22,8 +23,12 @@ body {
 
 .card {
   background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
@@ -37,7 +42,7 @@ body {
   width: 100%;
 }
 .card .card__text-container {
-  padding-bottom: 0;
+  padding-bottom: 2rem;
 }
 .card .card__text-container h1 {
   font-size: 1.5rem;
@@ -50,7 +55,6 @@ body {
 .card .card__profile {
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: 2rem;
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -105,7 +109,8 @@ body {
 }
 .card__profile--active .card__profile--active__social {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1.6rem;
 }
 .card__profile--active .card__profile--active__social p {
   text-transform: uppercase;
@@ -115,14 +120,12 @@ body {
 }
 .card__profile--active .card__profile--active__social .card__profile--active__social-links {
   display: flex;
-  align-self: center;
-  gap: 0.7rem;
+  gap: 1.5rem;
 }
 .card__profile--active .card__profile--active__social .card__profile--active__social-links a img {
   height: 100%;
 }
 .card__profile--active .card__profile--active__btn-share {
-  align-self: center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -140,7 +143,57 @@ body {
 }
 
 .attribution {
-  margin: 1rem 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    min-height: 100vh;
+  }
+  .card {
+    display: flex;
+    max-width: 900px;
+    max-height: 365px;
+    overflow: visible;
+  }
+  .card .card__img-container {
+    max-height: 100%;
+  }
+  .card .card__img-container img {
+    width: 130%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .card__profile--active {
+    position: absolute;
+    z-index: 2;
+    top: 49%;
+    right: -80px;
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .card__profile--active button {
+    display: none;
+  }
+  .card__profile--active .pointer {
+    background: hsl(217, 19%, 35%);
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    bottom: -35%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

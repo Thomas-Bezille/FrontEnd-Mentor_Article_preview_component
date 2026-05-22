@@ -1,0 +1,48 @@
+@media screen and (min-width: 992px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .card {
+    display: flex;
+    max-width: 900px;
+    max-height: 365px;
+    overflow: visible;
+    .card__img-container {
+      max-height: 100%;
+      img {
+        width: 130%;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+    }
+  }
+
+  .card__profile--active {
+    position: absolute;
+    z-index: 2;
+    top: 49%;
+    right: -80px;
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+    button {
+      display: none;
+    }
+    .pointer {
+      background: $color-bg-active-section;
+      width: 25px;
+      height: 25px;
+      left: 50%;
+      bottom: -35%;
+      transform: rotate(45deg) translate(-50%, -50%);
+      position: absolute;
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -14,6 +14,7 @@ body {
   font-size: $font-size;
   color: #333;
   padding-top: 2rem;
+  min-height: 100vh;
 }
 
 .card__text-container,
@@ -23,8 +24,12 @@ body {
 
 .card {
   background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
@@ -38,7 +43,7 @@ body {
   }
 
   .card__text-container {
-    padding-bottom: 0;
+    padding-bottom: 2rem;
     h1 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -52,7 +57,6 @@ body {
   .card__profile {
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: 2rem;
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -112,7 +116,8 @@ body {
 
   .card__profile--active__social {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1.6rem;
     p {
       text-transform: uppercase;
       font-size: 1rem;
@@ -121,8 +126,7 @@ body {
     }
     .card__profile--active__social-links {
       display: flex;
-      align-self: center;
-      gap: 0.7rem;
+      gap: 1.5rem;
       a {
         img {
           height: 100%;
@@ -131,7 +135,6 @@ body {
     }
   }
   .card__profile--active__btn-share {
-    align-self: center;
     border: none;
     outline: none;
     cursor: pointer;
@@ -150,5 +153,11 @@ body {
 }
 
 .attribution {
-  margin: 1rem 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
+
+@import "./media-queries";
