@@ -1,0 +1,25 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Bezille/FrontEnd-Mentor_Article_preview_component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Bezille/FrontEnd-Mentor_Article_preview_component/issues"
+  },
+  "homepage": "https://github.com/Thomas-Bezille/FrontEnd-Mentor_Article_preview_component#readme",
+  "dependencies": {
+    "sass": "^1.99.0"
+  }
+}
