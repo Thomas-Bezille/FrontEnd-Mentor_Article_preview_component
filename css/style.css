@@ -101,7 +101,7 @@ body {
 }
 
 .card__profile--active {
-  padding: 2rem 2.5rem;
+  padding: 1.6rem 2.5rem;
   background: hsl(217, 19%, 35%);
   display: flex;
   justify-content: space-between;
